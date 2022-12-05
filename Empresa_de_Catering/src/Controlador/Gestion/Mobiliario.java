@@ -7,5 +7,29 @@ package Controlador.Gestion;
 
 
 public class Mobiliario {
+    private String TipoDeEvento;
+    private String Utencilios[];
+
+    public String getTipoDeEvento() {
+        return TipoDeEvento;
+    }
+
+    public void setTipoDeEvento(String TipoDeEvento) {
+        this.TipoDeEvento = TipoDeEvento;
+    }
+
+    public String[] getUtencilios() {
+        return Utencilios;
+    }
+
+    public void setUtencilios(String[] Utencilios) {
+        this.Utencilios = Utencilios;
+    }
+
+    public Mobiliario(String TipoDeEvento, String[] Utencilios) {
+        this.TipoDeEvento = TipoDeEvento;
+        this.Utencilios = Utencilios;
+    }
+    
     
 }

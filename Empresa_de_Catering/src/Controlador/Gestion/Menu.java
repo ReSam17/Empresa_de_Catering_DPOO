@@ -7,5 +7,31 @@ package Controlador.Gestion;
 
 
 public class Menu {
+   private double Precio;
+    private Producto Menu[];
+
+    public double getPrecio() {
+        return Precio;
+    }
+
+    public void setPrecio(double Precio) {
+        this.Precio = Precio;
+    }
+
+    public Producto[] getMenu() {
+        return Menu;
+    }
+
+    public void setMenu(Producto[] Menu) {
+        this.Menu = Menu;
+    }
+
+    public Menu(double Precio, Producto[] Menu) {
+        this.Precio = Precio;
+        this.Menu = Menu;
+    }
+
+    
+    
     
 }

@@ -5,7 +5,35 @@
  */
 package Controlador.Gestion;
 
+import Controlador.Almacenamiento.Ingrediente;
+
 
 public class Producto {
+    
+    private double Precio;
+    private Ingrediente Ingrediente[];
+
+    public double getPrecio() {
+        return Precio;
+    }
+
+    public void setPrecio(double Precio) {
+        this.Precio = Precio;
+    }
+
+    public Ingrediente[] getIngrediente() {
+        return Ingrediente;
+    }
+
+    public void setIngrediente(Ingrediente[] Ingrediente) {
+        this.Ingrediente = Ingrediente;
+    }
+
+    public Producto(double Precio, Ingrediente[] Ingrediente) {
+        this.Precio = Precio;
+        this.Ingrediente = Ingrediente;
+    }
+    
+    
     
 }
