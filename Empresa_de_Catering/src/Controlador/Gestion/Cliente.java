@@ -10,7 +10,7 @@ public class Cliente {
     private String Nombre;
     private Pedido Pedido;
     private Pedido[]PedidoRealizados;
-    private String Email;
+    private String EmailLLL;
     private Boolean Nuevo;
     private String Estado;
     public Cliente(){
