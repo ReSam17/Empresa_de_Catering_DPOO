@@ -1,15 +1,14 @@
-package Controlador.Contr;
+package Controlador;
 
 import java.util.LinkedList;
-
-import Controlador.Almacenamiento.Ingrediente;
-import Controlador.Almacenamiento.Proveedor;
-import Controlador.Gestion.Cliente;
-
+import Modelo.Almacenamiento.Ingrediente;
+import Modelo.Almacenamiento.Proveedor;
+import Modelo.Gestion.Cliente;
+//ESPERANDO POR MIS COMPAÑEROS;
 public class GestorPersonal {
     private LinkedList <Cliente> clientes;
     private LinkedList <Proveedor> proveedores;
-    //COnstructor
+    //Constructor
     public GestorPersonal(){
         this.clientes=new LinkedList<Cliente>();
         this.proveedores=new LinkedList<Proveedor>();
@@ -31,15 +30,18 @@ public class GestorPersonal {
     public void cambiarCliente(Cliente cliente) {
         //Implementar
     }
-    public Cliente generarCliente(String Nname,String email) {
-        //Implementar
-        return null;
+    public void generarCliente(String Nname,String email) {
+        Cliente nuevo = new Cliente(Nname, null, null, email, null, email, null);
+        this.clientes.add(nuevo);
     }
-    public Proveedor generarProveedor(String name, Ingrediente oferta) {
-        //Implementar
-        return null;
+    public void generarProveedor(String name, Ingrediente oferta) {
+        Proveedor nuevo = new Proveedor(name, oferta);
+        
     }
     public void provedorSinIngredientes(Proveedor proveedor) {
-        //implementar
+        /*String s=proveedor.getName();
+        for (int i = 0; i < proveedores.size(); i++) {
+            
+        }*/
     }
 }

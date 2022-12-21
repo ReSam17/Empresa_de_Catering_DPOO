@@ -3,10 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controlador.Gestion;
-
-import Controlador.Almacenamiento.Ingrediente;
-
+package Modelo.Gestion;
+import Modelo.Almacenamiento.Ingrediente;
 
 public class Producto {
     

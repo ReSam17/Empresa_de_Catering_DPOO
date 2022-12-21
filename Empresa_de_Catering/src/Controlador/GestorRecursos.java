@@ -1,11 +1,12 @@
-package Controlador.Contr;
+package Controlador;
 
 import java.util.LinkedList;
-import Controlador.Almacenamiento.Ingrediente;
-import Controlador.Almacenamiento.Proveedor;
-import Controlador.Almacenamiento.Stock;
-import Controlador.Gestion.Pedido;
-import Controlador.Gestion.Propuesta;
+import Modelo.Almacenamiento.Ingrediente;
+import Modelo.Almacenamiento.Proveedor;
+import Modelo.Almacenamiento.Stock;
+import Modelo.Gestion.Pedido;
+import Modelo.Gestion.Propuesta;
+
 
 public class GestorRecursos {
     private LinkedList <Propuesta> propuestas;

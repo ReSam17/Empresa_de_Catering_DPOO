@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controlador.Economia;
+package Modelo.Economia;
 
 
-public class FEmitida {
+public class Factura {
     
 }

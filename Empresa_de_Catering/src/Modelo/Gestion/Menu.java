@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Controlador.Gestion;
+package Modelo.Gestion;
 
 
 public class Menu {
