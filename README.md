@@ -5,12 +5,7 @@
    Aquí nuestros usuarios en GitHub:</p>
 <ul>
     <li>ReSam17</li>
-    <li>20thalia02</li>
-    <li>keylar23</li>
-    <li>Ecruz1220</li>
-    <li>Lisa0102</li>
-</ul>
-<h4>Inforamción personal</h4>
+    <h4>Inforamción personal</h4>
 <p>Soy ReSam17, el coordinador de este grupo encargado de su 
     correcto funcionamiento, en este proyecto me encargaré de 
     la parte relacionda a la gestión, tanto de lo los recursos humanos 
@@ -23,6 +18,11 @@
     partes heredan de una clase con algunos métodos comunes para ambas.
     Pueden acceder a una imágen de mi módulo en el siguiente link: 
     https://github.com/ReSam17/VisualParadigm-UML/blob/510159de36833bdd26204bb7597027c206306ed4/Sin%20t%C3%ADtulo.png</p>
+    <li>20thalia02</li>
+    <li>keylar23</li>
+    <li>Ecruz1220</li>
+    <li>Lisa0102</li>
+</ul>
 <h3>¿En qué consiste?</h3>
 <p>El proyecto a desarrolar consiste en una aplicación para 
     una empresa de de catering, la cual cuenta con diversas opciones
