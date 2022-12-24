@@ -14,14 +14,15 @@
 <p>Soy ReSam17, el coordinador de este grupo encargado de su /n
     correcto funcionamiento, en este proyecto me encargaré de /n
     la parte relacionda a la gestión, tanto de lo los recursos humanos /n
-    como de los bienes principales, adjunto foto del mñodulo correspondiente /n
-    al final de este docmuneto así como del proyecto entero.</p>
+    como de los bienes principales.</p>
 <h4>Más acerca de mi módulo</h4>
 <p>Mi módulo se divide en dos partes principales, una destinada a gestionar /n
     los clientes y provedores, con esto me refiero a ingresar nuevos en el sistema/n
     o modificar los ya existentes, y otra donde se dedica a realizar acciones con /n
     los recursos como lo son hacer compras, formalizar propuestas, entre otros. estos /n
-    partes heredan de una clase con algunos métodos comunes para ambas.</p>
+    partes heredan de una clase con algunos métodos comunes para ambas./n
+    Pueden acceder a una imágen de mi módulo en el siguiente link: /n
+    https://github.com/ReSam17/VisualParadigm-UML/blob/510159de36833bdd26204bb7597027c206306ed4/Sin%20t%C3%ADtulo.png</p>
 <h3>¿En qué consiste?</h3>
 <p>El proyecto a desarrolar consiste en una aplicación para /n
     una empresa de de catering, la cual cuenta con diversas opciones/n
@@ -31,7 +32,8 @@
     clientes y proveedores, los ingredientes con los que cuentan para la /n
     elaboración de sus prouctos, las propuestas realizadas y la administración /n
     de las facturas, contará con estas funciones de forma inicial siempre /n
-    pensando en la incorporación de otras funcionalidades.</p>
+    pensando en la incorporación de otras funcionalidades. /n
+    Pueden acceder al del UML del proyecto en el siguiente link:</p>
 <h3>Tecnologías empleadas</h3>
     <p>Para el desarrollo de este proyecto se ha utilizado el lenguaje /n
     java, y su versión de Java Development Kit (JDK) 18.0.2.1 y para /n
