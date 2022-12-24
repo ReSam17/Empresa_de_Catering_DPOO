@@ -27,15 +27,7 @@
     <p>Mi módulo consiste en crear una o varias  propuesta para mostrarle al cliente,
     en cuya propuesta se incluye el mobiliario adecuado junto a un menu, todo esto según el evento 
     y la preferencia del cliente.
-    Pueden acceder a este link que los llevara a una imagen de mi módulo:
-    
-    </p>
-    
-    
-    
-    
-    
-    
+    Pueden acceder a este link que los llevara a una imagen de mi módulo:</p>
     <li>Ecruz1220</li>
     <li>Lisa0102</li>
 </ul>
