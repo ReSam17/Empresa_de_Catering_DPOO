@@ -20,6 +20,22 @@
     https://github.com/ReSam17/VisualParadigm-UML/blob/510159de36833bdd26204bb7597027c206306ed4/Sin%20t%C3%ADtulo.png</p>
     <li>20thalia02</li>
     <li>keylar23</li>
+    <h4>Información Personal </h4>
+    <p> Soy keylar23, una de los colaboradores de este grupo.
+    En este proyecto trabajo en la parte relacionada con la gestión.</p>
+    <h4>Más acerca de mi módulo</h4>
+    <p>Mi módulo consiste en crear una o varias  propuesta para mostrarle al cliente,
+    en cuya propuesta se incluye el mobiliario adecuado junto a un menu, todo esto según el evento 
+    y la preferencia del cliente.
+    Pueden acceder a este link que los llevara a una imagen de mi módulo:
+    
+    </p>
+    
+    
+    
+    
+    
+    
     <li>Ecruz1220</li>
     <li>Lisa0102</li>
 </ul>
