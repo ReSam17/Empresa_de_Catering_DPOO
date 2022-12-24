@@ -22,12 +22,15 @@
     <li>keylar23</li>
     <h4>Información Personal </h4>
     <p> Soy keylar23, una de los colaboradores de este grupo.
-    En este proyecto trabajo en la parte relacionada con la gestión.</p>
+    En este proyecto trabajo en la parte relacionada con la gestión.
+    El IDE que utilizo es el NetBeans 8.0.2</p>
     <h4>Más acerca de mi módulo</h4>
     <p>Mi módulo consiste en crear una o varias  propuesta para mostrarle al cliente,
     en cuya propuesta se incluye el mobiliario adecuado junto a un menu, todo esto según el evento 
-    y la preferencia del cliente.
-    Pueden acceder a este link que los llevara a una imagen de mi módulo:
+    y la preferencia del cliente. Para elaborar la misma, se necesita de un mobiliario que se compone según el tipo de evento y los utencilios a utilizar,
+    por otro lado, está el menu que es un arreglo de una serie de productos, que en conjunto con todos ellos se planifica un precio estimado. Pero 
+    también cada producto tiene un arreglo de ingredientes y su precio.
+    Para mas información pueden acceder a este link que los llevara a una imagen de mi módulo:
     https://github.com/ReSam17/VisualParadigm-UML/blob/ab0b6908010cb0b2205cc03845e0ea6b42d44db2/Keyla.png   </p>
     <li>Ecruz1220</li>
     <li>Lisa0102</li>
