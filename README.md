@@ -36,7 +36,7 @@
 <p>El proyecto a desarrolar consiste en una aplicación para 
     una empresa de de catering, la cual cuenta con diversas opciones
     para ofrecerles a sus clientes, desde pequeños menúes hasta grandes 
-    ofertas con mobilirio incluido. El objetivo de esta aplicación será 
+    ofertas con mobiliario incluido. El objetivo de esta aplicación será 
     facilitar la administración de dicha empresa abracando la inforamción 
     clientes y proveedores, los ingredientes con los que cuentan para la 
     elaboración de sus prouctos, las propuestas realizadas y la administración 
