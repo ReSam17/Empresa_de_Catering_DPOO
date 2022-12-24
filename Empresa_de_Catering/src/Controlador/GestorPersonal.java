@@ -5,7 +5,7 @@ import Modelo.Almacenamiento.Ingrediente;
 import Modelo.Almacenamiento.Proveedor;
 import Modelo.Gestion.Cliente;
 //ESPERANDO POR MIS COMPAÑEROS;
-public class GestorPersonal {
+public class GestorPersonal extends Gestor {
     private LinkedList <Cliente> clientes;
     private LinkedList <Proveedor> proveedores;
     //Constructor
@@ -43,5 +43,16 @@ public class GestorPersonal {
         for (int i = 0; i < proveedores.size(); i++) {
             
         }*/
+    }
+    @Override
+    public int buscar(Object obj) {
+        if (obj instanceof Proveedor) {
+            for (int i = 0; i < this.proveedores.size(); i++) {
+                
+            }
+        }else if(obj instanceof Cliente){
+
+        }
+        
     }
 }

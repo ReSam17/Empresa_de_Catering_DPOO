@@ -8,7 +8,7 @@ import Modelo.Gestion.Pedido;
 import Modelo.Gestion.Propuesta;
 
 
-public class GestorRecursos {
+public class GestorRecursos extends Gestor{
     private LinkedList <Propuesta> propuestas;
     private Stock stock;
     //Constructor
