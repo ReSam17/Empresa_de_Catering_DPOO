@@ -27,7 +27,8 @@
     <p>Mi módulo consiste en crear una o varias  propuesta para mostrarle al cliente,
     en cuya propuesta se incluye el mobiliario adecuado junto a un menu, todo esto según el evento 
     y la preferencia del cliente.
-    Pueden acceder a este link que los llevara a una imagen de mi módulo:</p>
+    Pueden acceder a este link que los llevara a una imagen de mi módulo:
+    https://github.com/ReSam17/VisualParadigm-UML/blob/ab0b6908010cb0b2205cc03845e0ea6b42d44db2/Keyla.png   </p>
     <li>Ecruz1220</li>
     <li>Lisa0102</li>
 </ul>
