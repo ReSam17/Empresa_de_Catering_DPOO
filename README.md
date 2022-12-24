@@ -5,10 +5,10 @@
    Aquí nuestros usuarios en GitHub:</p>
 <ul>
     <li>ReSam17</li>
-    <li>02thalia02</li>
+    <li>20thalia02</li>
     <li>keylar23</li>
-    <li>ECruz</li>
-    <li>Lisa</li>
+    <li>Ecruz1220</li>
+    <li>Lisa0102</li>
 </ul>
 <h4>Inforamción personal</h4>
 <p>Soy ReSam17, el coordinador de este grupo encargado de su /n
