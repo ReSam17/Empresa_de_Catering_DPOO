@@ -51,7 +51,7 @@
 <p>Esta aplicación esta destinada a ser usada por la persona encargada de llevar
     la información de la empresa, llámese secretaria o el nombre que la empresa decida,
     puede ser usada por más de una persona pero al final su propósito será el mismo, recibir 
-    los pedidos de los clientes y en base a estos mostrarles propuestas que satisfascan sus 
+    los pedidos de los clientes y en base a estos mostrarles propuestas que satisfagan sus 
     necesidades, una vez aceptado, marcarlo, y hacer la solicitud de retiro de produtos del
     almacén.</p>
 <h3>Tecnologías empleadas</h3>
