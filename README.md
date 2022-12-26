@@ -2,7 +2,7 @@
 <h3>¿Quiénes somos?</h3>
 <p>Somos un grupo de estudiantes de ingeniería informática de 
     de primer año de la universidad "Camilo Cienfuegos" de Matanzas.
-   Aquí nuestros usuarios en GitHub:</p>
+    Aquí nuestros usuarios en GitHub:</p>
 <ul>
     <li>ReSam17</li>
     <h4>Inforamción personal</h4>
@@ -14,7 +14,7 @@
 <p>Mi módulo se divide en dos partes principales, una destinada a gestionar 
     los clientes y provedores, con esto me refiero a ingresar nuevos en el sistema
     o modificar los ya existentes, y otra donde se dedica a realizar acciones con 
-    los recursos como lo son hacer compras, formalizar propuestas, entre otros. estos 
+    los recursos como lo son hacer compras, formalizar propuestas, entre otros. Estas 
     partes heredan de una clase con algunos métodos comunes para ambas.
     Pueden acceder a una imágen de mi módulo en el siguiente link: 
     https://github.com/ReSam17/VisualParadigm-UML/blob/510159de36833bdd26204bb7597027c206306ed4/Sin%20t%C3%ADtulo.png</p>
@@ -47,6 +47,13 @@
     pensando en la incorporación de otras funcionalidades. 
     Pueden acceder al del UML del proyecto en el siguiente link:
     https://github.com/ReSam17/VisualParadigm-UML/blob/510159de36833bdd26204bb7597027c206306ed4/Empresa_de_catering.vpp</p>
+    <h3>Usabildad de la Aplicación</h3>
+<p>Esta aplicación esta destinada a ser usada por la persona encargada de llevar
+    la información de la empresa, llámese secretaria o el nombre que la empresa decida,
+    puede ser usada por más de una persona pero al final su propósito será el mismo, recibir 
+    los pedidos de los clientes y en base a estos mostrarles propuestas que satisfascan sus 
+    necesidades, una vez aceptado, marcarlo, y hacer la solicitud de retiro de produtos del
+    almacén.</p>
 <h3>Tecnologías empleadas</h3>
     <p>Para el desarrollo de este proyecto se ha utilizado el lenguaje 
     java, y su versión de Java Development Kit (JDK) 18.0.2.1 y para 
