@@ -1,8 +1,8 @@
 package Controlador;
 
 import java.util.LinkedList;
-import Modelo.Almacenamiento.Ingrediente;
-import Modelo.Almacenamiento.Proveedor;
+import Controlador.Almacenamiento.Ingrediente;
+import Controlador.Almacenamiento.Proveedor;
 import Modelo.Gestion.Cliente;
 //ESPERANDO POR MIS COMPAÑEROS;
 public class GestorPersonal extends Gestor {
@@ -44,7 +44,6 @@ public class GestorPersonal extends Gestor {
             
         }*/
     }
-    @Override
     public int buscar(Object obj) {
         if (obj instanceof Proveedor) {
             for (int i = 0; i < this.proveedores.size(); i++) {
@@ -53,6 +52,22 @@ public class GestorPersonal extends Gestor {
         }else if(obj instanceof Cliente){
 
         }
+        return 0;
         
+    }
+
+    @Override
+    public int buscar(String s) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void adds(Object obj) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void delete(String s) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

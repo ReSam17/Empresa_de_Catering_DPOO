@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Modelo.Gestion;
-import Modelo.Almacenamiento.Ingrediente;
+import Controlador.Almacenamiento.Ingrediente;
 
 public class Producto {
     

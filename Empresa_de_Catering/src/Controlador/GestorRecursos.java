@@ -1,9 +1,9 @@
 package Controlador;
 
 import java.util.LinkedList;
-import Modelo.Almacenamiento.Ingrediente;
-import Modelo.Almacenamiento.Proveedor;
-import Modelo.Almacenamiento.Stock;
+import Controlador.Almacenamiento.Ingrediente;
+import Controlador.Almacenamiento.Proveedor;
+import Controlador.Almacenamiento.Stock;
 import Modelo.Gestion.Pedido;
 import Modelo.Gestion.Propuesta;
 
@@ -40,5 +40,20 @@ public class GestorRecursos extends Gestor{
     public Pedido formalizarPedido(Propuesta propuesta){
         //Implementar
         return null;
+    }
+
+    @Override
+    public int buscar(String s) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void adds(Object obj) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void delete(String s) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

@@ -20,6 +20,10 @@ public class Proveedor {
         this.ingredientes = ingredientes;
         this.ingredientesRecomendados = ingredientesRecomendados;
     }
+
+    public Proveedor(String name, Ingrediente oferta) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     // get y set
     public void setNombre(String nombre){
         this.nombre=nombre;
