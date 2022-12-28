@@ -5,12 +5,10 @@
  */
 package Modelo.Gestion;
 
-import java.io.Serializable;
-
 import Modelo.Economia.FEmitida;
 
 
-public class Pedido implements Serializable{
+public class Pedido {
     private String Fecha;
     private String TipoDeEvento;
     private int CantidadDePersonas;
@@ -79,11 +77,13 @@ public class Pedido implements Serializable{
     this.Fecha= " ";
     this.TipoDeEvento=" ";
     this.CantidadDePersonas=0;
-    this.Propuesta=null;
-    this.Factura= null;
-    this.Veganos =null ;
-    this.Alergias = null;
+    this.Propuesta=Propuesta;
+    this.Factura= Factura;
+    this.Veganos =Veganos ;
+    this.Alergias = Alergias;
     }
+
+    
     public Pedido(String Fecha,String TipoDeEvento, int CantidadDePersonas, Propuesta Propuesta,FEmitida Factura, Boolean Veganos,String[]Alergias){
     this.Fecha=Fecha;
     this.TipoDeEvento=TipoDeEvento;
@@ -93,4 +93,13 @@ public class Pedido implements Serializable{
     this.Veganos=Veganos;
     this.Alergias=Alergias;
     }
+
+    
+
+    /**
+     *
+     */
+   
+
+
 }

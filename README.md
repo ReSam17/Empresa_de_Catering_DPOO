@@ -1,4 +1,4 @@
-<h1>Proyecto de fin de Curso de DPOO</h1>
+﻿<h1>Proyecto de fin de Curso de DPOO</h1>
 <h3>¿Quiénes somos?</h3>
 <p>Somos un grupo de estudiantes de ingeniería informática de 
     de primer año de la universidad "Camilo Cienfuegos" de Matanzas.
@@ -34,6 +34,16 @@
     https://github.com/ReSam17/VisualParadigm-UML/blob/ab0b6908010cb0b2205cc03845e0ea6b42d44db2/Keyla.png   </p>
     <li>Ecruz1220</li>
     <li>Lisa0102</li>
+    <h4>Informacion personal</h4>
+<p> Soy Lisa0102 uno de los colaboradores de este proyecto.
+    En este proyecto trabajo en el área de gestion.
+    El IDE que utilizo es el neatbeans 8.0.2</p>
+    <h4> Más acerca de mi módulo</h4>
+<p> Mi módulo consiste en ingresar los nuevos clientes que soliciten servicios de la empresa y actualizar los ya existetes.
+    Tambien gestiono el pedido realizado por el cliente y de ahí se crean nuevas propuestas para mostrarle al cliente, y este al seleccionar una quedará formalizado el pedido.</p>
+    Puede presionar este link para acceder a mi módulo:
+    https://github.com/ReSam17/VisualParadigm-UML/blob/9d93cae80ca782fc8a03e14e35a6c7ceaf21d994/cliente%20y%20pedido.jpg
+
 </ul>
 <h3>¿En qué consiste?</h3>
 <p>El proyecto a desarrolar consiste en una aplicación para 
