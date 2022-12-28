@@ -1,6 +1,6 @@
 
 <<<<<<< Updated upstream
-package Controlador.Almacenamiento;
+package Modelo.Almacenamiento;
 =======
 package Modelo.Almacenamiento;
 >>>>>>> Stashed changes
