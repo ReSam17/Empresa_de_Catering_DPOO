@@ -1,9 +1,9 @@
 package Controlador;
 
 import java.util.LinkedList;
-import Controlador.Almacenamiento.Ingrediente;
-import Controlador.Almacenamiento.Proveedor;
-import Controlador.Almacenamiento.Stock;
+import Modelo.Almacenamiento.Ingrediente;
+import Modelo.Almacenamiento.Proveedor;
+import Modelo.Almacenamiento.Stock;
 import Modelo.Gestion.Pedido;
 import Modelo.Gestion.Propuesta;
 

@@ -1,8 +1,8 @@
 package Controlador;
 
 import java.util.LinkedList;
-import Controlador.Almacenamiento.Ingrediente;
-import Controlador.Almacenamiento.Proveedor;
+import Modelo.Almacenamiento.Ingrediente;
+import Modelo.Almacenamiento.Proveedor;
 import Modelo.Gestion.Cliente;
 //ESPERANDO POR MIS COMPAÑEROS;
 public class GestorPersonal extends Gestor {
