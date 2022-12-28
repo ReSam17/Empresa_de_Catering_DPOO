@@ -1,6 +1,10 @@
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 package Modelo.Almacenamiento;
+=======
+package Modelo.Almacenamiento;
+>>>>>>> Stashed changes
 =======
 package Modelo.Almacenamiento;
 >>>>>>> Stashed changes
