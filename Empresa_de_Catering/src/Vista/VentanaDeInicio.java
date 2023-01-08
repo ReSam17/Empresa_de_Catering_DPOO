@@ -34,7 +34,7 @@ public class VentanaDeInicio extends javax.swing.JFrame {
             try {
             gp.cargarClientes("Archivos\\Clientes.txt");
             gr.cargarStock("Archivos\\Stock.txt");
-             } catch (IOException ex) {
+            } catch (IOException ex) {
             Logger.getLogger(VentanaDeInicio.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(VentanaDeInicio.class.getName()).log(Level.SEVERE, null, ex);
