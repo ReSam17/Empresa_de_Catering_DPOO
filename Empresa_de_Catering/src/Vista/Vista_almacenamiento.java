@@ -9,7 +9,10 @@ import Modelo.Almacenamiento.Stock;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
@@ -32,6 +35,9 @@ public class Vista_almacenamiento extends javax.swing.JDialog implements ActionL
         this.padre=parent;
         this.gestor=r;
         initComponents();
+        setLocationRelativeTo(null);
+        actualizarTabla();
+        setVisible(true);
         
     }
 
@@ -160,7 +166,14 @@ public class Vista_almacenamiento extends javax.swing.JDialog implements ActionL
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        AgregarIngrediente agregar=new AgregarIngrediente(padre, true);
+        
+            AgregarIngrediente agregar=new AgregarIngrediente(padre, true);
+            actualizarTabla();
+            try {
+            gestor.guardarPropuestas("Archivos\\Stock.txt");
+        } catch (IOException ex) {
+            Logger.getLogger(Vista_almacenamiento.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

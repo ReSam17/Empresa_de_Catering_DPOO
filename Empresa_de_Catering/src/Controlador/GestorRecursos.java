@@ -59,6 +59,22 @@ public class GestorRecursos implements Serializable{
         reader.close();
 
     }
+    
+    public void guardarStock(String ruta) throws IOException{
+        
+        File file = new File(ruta);
+        FileOutputStream guardar = new FileOutputStream(file);
+        ObjectOutputStream writer = new ObjectOutputStream(guardar);
+        
+        writer.writeInt(this.stock.getIngrediente().size());
+        
+        for (int i = 0; i < this.stock.getIngrediente().size(); i++){
+            writer.writeObject(this.stock.getIngrediente().get(i));
+        }
+        
+        writer.flush();
+        writer.close();
+    }
 
     public void cargarPropuestas(String ruta) throws IOException, ClassNotFoundException {
         
@@ -92,5 +108,28 @@ public class GestorRecursos implements Serializable{
         writer.flush();
         writer.close();
 
+    }
+    
+    public int buscarEnStock(String s){
+        int pos = -1;
+        for(int i = 0; i < this.stock.getIngrediente().size(); i++){
+            if(this.stock.getIngrediente().get(i).getNombre().equals(s)){
+                pos = i;
+                return pos;
+            }
+        }
+        return pos;
+    }
+    
+    public int hacerCompara(String s, int cantidad){
+        int pos = buscarEnStock(s);
+        if (pos == -1){
+            return pos;
+        }
+        double cantidadNueva = this.stock.getIngrediente().get(pos).getCantidadDisponible() + cantidad;
+        this.stock.getIngrediente().get(pos).setCantidadDisponible(cantidadNueva);
+        
+        return pos;
+        
     }
 }

@@ -28,12 +28,7 @@ public class Stock {
     public ArrayList<IngredienteEmpresa> getIngrediente(){
         return this.ingredienteStock;
     }
-    public static void setCantidadIngredientes(int cantidadIngredientes) {
-        Stock.cantidadIngredientes = cantidadIngredientes;
-    }
-    public static int getCantidadIngredientes() {
-        return cantidadIngredientes;
-    }
+    
     //metodos
     
     public static boolean validarAgrego(IngredienteProveedor ingredienteAdicionar, IngredienteEmpresa ingredienteVerificar){
