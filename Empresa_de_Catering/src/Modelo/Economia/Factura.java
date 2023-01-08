@@ -6,6 +6,24 @@
 package Modelo.Economia;
 
 
+
 public class Factura {
+
+    private double precio;
     
+    //Constructores
+
+    public Factura(double precio) {
+    this.precio=precio;
+    }
+
+    //geter y seter
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
 }

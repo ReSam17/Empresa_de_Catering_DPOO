@@ -1,8 +1,9 @@
 
 package Modelo.Almacenamiento;
 
+import java.io.Serializable;
 
-public class IngredienteProveedor extends Ingrediente{
+public class IngredienteProveedor extends Ingrediente implements Serializable{
     //atributos
     private boolean disponibilidad;//verificar con reyson, no tiene creado get y set (indica si el proveedor tiene el ingrediente)
     private boolean caducidad;

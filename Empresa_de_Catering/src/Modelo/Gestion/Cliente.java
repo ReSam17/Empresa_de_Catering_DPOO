@@ -5,7 +5,10 @@
  */
 package Modelo.Gestion;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente implements Serializable{
+    
     private String Nombre;
     private String Apellidos;
     private String CI;
@@ -71,10 +74,6 @@ public Cliente(String Nombre, Pedido Pedido, Pedido[] PedidoRealizados, String E
         this.Estado = Estado;
         this.Propuesta = Propuesta;
     }
-   
-    
-  
-   
     public Boolean AceptacionPropuesta(Propuesta Propuesta){
     return this.Propuesta;
     }

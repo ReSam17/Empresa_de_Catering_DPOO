@@ -1,14 +1,20 @@
 package Controlador;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.LinkedList;
-import Modelo.Almacenamiento.Ingrediente;
-import Modelo.Almacenamiento.Proveedor;
+import Modelo.Almacenamiento.IngredienteEmpresa;
 import Modelo.Almacenamiento.Stock;
-import Modelo.Gestion.Pedido;
 import Modelo.Gestion.Propuesta;
 
 
-public class GestorRecursos extends Gestor{
+public class GestorRecursos implements Serializable{
     private LinkedList <Propuesta> propuestas;
     private Stock stock;
     //Constructor
@@ -16,6 +22,11 @@ public class GestorRecursos extends Gestor{
         this.propuestas=new LinkedList<Propuesta>();
         this.stock=stock;
     }
+    public GestorRecursos(){
+        this.propuestas=new LinkedList<Propuesta>();
+        this.stock=new Stock();
+    }
+
     //Geter And Seter
     public LinkedList<Propuesta> getPropuestas() {
         return propuestas;
@@ -30,15 +41,56 @@ public class GestorRecursos extends Gestor{
         this.stock = stock;
     }
     //Metódos específicos
-    public void enviarPropuesta(Propuesta propuesta) {
-        //IMplementar
+    
+    public void cargarStock(String ruta) throws IOException, ClassNotFoundException {
+        
+        File file = new File(ruta);
+        FileInputStream cargar = new FileInputStream(file);
+        ObjectInputStream reader = new ObjectInputStream(cargar);
+
+        this.stock.setCantidadIngredientes(reader.readInt());
+        int tam = this.stock.getCantidadIngredientes();
+
+        for (int i = 0; i < tam; i++) {
+            Object o = reader.readObject();
+            this.stock.getIngrediente().add((IngredienteEmpresa) o);
+        }
+
+        reader.close();
+
     }
-    public Ingrediente hacerCompra(Proveedor proveedor) {
-        //Implementar
-        return null;
+
+    public void cargarPropuestas(String ruta) throws IOException, ClassNotFoundException {
+        
+        File file = new File(ruta);
+        FileInputStream cargar = new FileInputStream(file);
+        ObjectInputStream reader = new ObjectInputStream(cargar);
+
+        int tam = reader.readInt();
+
+        for (int i = 0; i < tam; i++) {
+            Object o = reader.readObject();
+            this.propuestas.add((Propuesta) o);
+        }
+        
+        reader.close();
+        
     }
-    public Pedido formalizarPedido(Propuesta propuesta){
-        //Implementar
-        return null;
+
+    public void guardarPropuestas(String ruta) throws IOException{
+
+        File file = new File(ruta);
+        FileOutputStream guardar = new FileOutputStream(file);
+        ObjectOutputStream writer = new ObjectOutputStream(guardar);
+
+        writer.writeInt(this.propuestas.size());
+
+        for (int i = 0; i < this.propuestas.size(); i++) {
+            writer.writeObject(this.propuestas.get(i));
+        }
+
+        writer.flush();
+        writer.close();
+
     }
 }

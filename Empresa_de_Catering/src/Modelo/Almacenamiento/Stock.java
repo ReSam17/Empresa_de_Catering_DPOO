@@ -2,7 +2,6 @@
 package Modelo.Almacenamiento;
 import java.util.ArrayList;
 
-
 public class Stock {
     //atributos
     private static int cantidadIngredientes=0;
@@ -20,6 +19,12 @@ public class Stock {
     }
     public ArrayList<IngredienteEmpresa> getIngrediente(){
         return this.ingredienteStock;
+    }
+    public static void setCantidadIngredientes(int cantidadIngredientes) {
+        Stock.cantidadIngredientes = cantidadIngredientes;
+    }
+    public static int getCantidadIngredientes() {
+        return cantidadIngredientes;
     }
     //metodos
     
@@ -43,7 +48,7 @@ public class Stock {
     }
     public static int encontrarElementoEliminar(IngredienteEmpresa ingredienteEliminar ,Stock stockActual){
         for (int i = 0; i < cantidadIngredientes; i++) {
-           if(ingredienteEliminar.getNombre().trim().equals(stockActual.getIngrediente().get(i).getNombre().trim())){
+            if(ingredienteEliminar.getNombre().trim().equals(stockActual.getIngrediente().get(i).getNombre().trim())){
                 return i;
             }
         }

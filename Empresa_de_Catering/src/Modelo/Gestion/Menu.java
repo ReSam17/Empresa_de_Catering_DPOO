@@ -7,7 +7,7 @@ package Modelo.Gestion;
 
 
 public class Menu {
-   private double Precio;
+    private double Precio;
     private Producto Menu[];
 
     public double getPrecio() {
