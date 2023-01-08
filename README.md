@@ -9,7 +9,8 @@
 <p>Soy ReSam17, el coordinador de este grupo encargado de su 
     correcto funcionamiento, en este proyecto me encargaré de 
     la parte relacionda a la gestión, tanto de lo los recursos humanos 
-    como de los bienes principales.</p>
+    como de los bienes principales. Para la elaboración  de esta aplicación me
+    he apoyado en el IDE NetBeans versión 8.0 y el editor de código VSCode</p>
 <h4>Más acerca de mi módulo</h4>
 <p>Mi módulo se divide en dos partes principales, una destinada a gestionar 
     los clientes y provedores, con esto me refiero a ingresar nuevos en el sistema
