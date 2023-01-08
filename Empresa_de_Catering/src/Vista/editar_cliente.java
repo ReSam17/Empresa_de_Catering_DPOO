@@ -16,15 +16,17 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Eddy Espinosa
+ * @author Tecnicos
  */
-public class editar_cliente extends javax.swing.JFrame {
+public class editar_cliente extends javax.swing.JDialog {
 
     /**
-     * Creates new form editar_cliente
+     * Creates new form NewJDialog
      */
-    public editar_cliente() {
+    public editar_cliente(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
+        setVisible(true);
     }
 
     /**
@@ -49,6 +51,8 @@ public class editar_cliente extends javax.swing.JFrame {
         jlabelww = new javax.swing.JLabel();
         txtTel = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         jLabel5.setText("Editar datos clientes:");
@@ -248,6 +252,10 @@ public class editar_cliente extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtApellKeyTyped
 
+    private void txtTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTelActionPerformed
+
     private void txtTelKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelKeyTyped
         // TODO add your handling code here:
         char karakter = evt.getKeyChar();
@@ -295,10 +303,6 @@ public class editar_cliente extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void txtTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -325,11 +329,19 @@ public class editar_cliente extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(editar_cliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new editar_cliente().setVisible(true);
+                editar_cliente dialog = new editar_cliente(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
             }
         });
     }

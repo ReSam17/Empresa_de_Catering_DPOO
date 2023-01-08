@@ -39,6 +39,7 @@ public class vista_cliente extends javax.swing.JFrame {
         jTable3 = new javax.swing.JTable();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
+        jDialog1 = new javax.swing.JDialog();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
@@ -113,6 +114,17 @@ public class vista_cliente extends javax.swing.JFrame {
         ));
         jScrollPane4.setViewportView(jTable4);
 
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Empresa de Catering");
 
@@ -120,7 +132,7 @@ public class vista_cliente extends javax.swing.JFrame {
 
         tabla = new javax.swing.JTable(){
             public boolean isCellEditable(int fila,int col){
-                return false;
+                return true;
             }
         };
         tabla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -363,12 +375,10 @@ public class vista_cliente extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(428, 428, 428)
@@ -526,18 +536,21 @@ public class vista_cliente extends javax.swing.JFrame {
 
     private void tablaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaMouseClicked
         // TODO add your handling code here:
-        editar_cliente ventana = new editar_cliente();
+       // editar_cliente_old ventana = new editar_cliente_old();
 
         if (evt.getClickCount() == 2) {
             if (tabla.getSelectedRow() != -1) {
+                
+                editar_cliente editar = new editar_cliente(this, true);
+               
+                editar.txtNom.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 0));
+                editar.txtApell.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 1));
+                editar.txtCI.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 2));
+                editar.txtCorreo.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 3));
+               // editar.txtTel.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 4));
 
-                ventana.txtNom.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 0));
-                ventana.txtApell.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 1));
-                ventana.txtCI.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 2));
-                ventana.txtCorreo.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 3));
-               // ventana.txtTel.setText((String) modelo.getValueAt(tabla.getSelectedRow(), 3));
-
-                ventana.setVisible(true);
+                editar.setVisible(true);
+             //   ventana.setVisible(true);
             }
         }
 
@@ -556,6 +569,7 @@ public class vista_cliente extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton6;
+    private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
