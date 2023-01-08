@@ -1,8 +1,10 @@
 
 package Modelo.Almacenamiento;
 
+import java.io.Serializable;
 
-public class IngredienteEmpresa extends Ingrediente {
+
+public class IngredienteEmpresa extends Ingrediente implements Serializable{
     //atributos
     private double cantidadMinima;
     private double cantidadCompra;
