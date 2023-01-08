@@ -1,8 +1,9 @@
 
 package Modelo.Almacenamiento;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Proveedor {
+public class Proveedor implements Serializable{
     //atributos
     
     private String nombre;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 public class Stock {
-    //atributos
+    //atributos  
     private static int cantidadIngredientes=0;
     private ArrayList<IngredienteEmpresa> ingredienteStock;
     //constructores
@@ -15,7 +15,15 @@ public class Stock {
         this.ingredienteStock=ingrediente; 
     }
     //get y set
-    public void setIngrediente(ArrayList<IngredienteEmpresa> ingrediente){
+     public static int getCantidadIngredientes() {
+        return cantidadIngredientes;
+    }
+
+    public static void setCantidadIngredientes(int cantidadIngredientes) {
+        Stock.cantidadIngredientes = cantidadIngredientes;
+    }
+    
+    public void setIngredienteStock(ArrayList<IngredienteEmpresa> ingrediente){
         this.ingredienteStock=ingrediente;
     }
     public ArrayList<IngredienteEmpresa> getIngrediente(){
@@ -57,6 +65,7 @@ public class Stock {
     public boolean agregarIngrediente(IngredienteProveedor ingredeienteAdicionar, Stock stockActual){
         if(encontrarElementoAgregar(ingredeienteAdicionar, stockActual)==-1){
             this.ingredienteStock.add(convertirProveedorEmpresa(ingredeienteAdicionar));
+            cantidadIngredientes++;
             return true;
         }
         else{
@@ -116,5 +125,9 @@ public class Stock {
         else{
             return false;
         }
+    }
+    //elimina por completo un ingrediente del stock 
+    public void eliminarElemento(int pos){
+        ingredienteStock.remove(pos);
     }
 }
