@@ -6,6 +6,10 @@
 package Vista;
 
 import Modelo.Gestion.Cliente;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -79,7 +83,7 @@ public class VentanaNuevoCliente extends javax.swing.JDialog {
 
         jButton2.setBackground(new java.awt.Color(153, 255, 153));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/btb_ya.png"))); // NOI18N
-        jButton2.setText("jButton2");
+        jButton2.setText("Aceptar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -165,12 +169,34 @@ public class VentanaNuevoCliente extends javax.swing.JDialog {
     }//GEN-LAST:event_jButtonCancelarActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if(CrearCliente()){
+        
+        Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@".concat("[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"));
+        Matcher correo = pattern.matcher(jTextField3.getText());
+        
+        if (jTextField1.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "El campo Nombre es obligatorio.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if(jTextField1.getText().length() < 3){
+            JOptionPane.showMessageDialog(null, "El nombre es muy corto.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if(jTextField2.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "El campo Apellido es obligatorio.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField2.getText().length() < 2){
+            JOptionPane.showMessageDialog(null, "El apellido es muy corto.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField4.getText().isEmpty() ) {
+            JOptionPane.showMessageDialog(null, "El campo CI es obligatorio.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField4.getText().length() != 11) {
+            JOptionPane.showMessageDialog(null, "El CI tiene 11 números obligatorios.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if (jTextField3.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "El campo Correo es obligatorio.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else if (correo.find() == false){
+            JOptionPane.showMessageDialog(null, "Correo inválido.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } else {
+            cliente = new Cliente(jTextField1.getText(), null, null, jTextField3.getText(), null, null, null);
             this.clickAceptar = true;
             dispose();
-        }else{
-            JOptionPane.showMessageDialog(null, "Campos vacíos.", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
+        
+        
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -243,19 +269,5 @@ public class VentanaNuevoCliente extends javax.swing.JDialog {
         return cliente;
     }
     
-    private boolean CrearCliente(){
-        boolean creado = true;
-        String nombre = jTextField1.getText().trim();
-        String apellidos = jTextField2.getText().trim();
-        String email = jTextField3.getText().trim();
-        String ci = jTextField4.getText().trim();
-        
-        if(nombre.equals("") || apellidos.equals("") || email.equals("") || ci.equals("")){
-            creado = false;
-        }else{
-            cliente = new Cliente(nombre, null, null, email, null, null, null);
-        }
-        
-        return creado;
-    }
+    
 }

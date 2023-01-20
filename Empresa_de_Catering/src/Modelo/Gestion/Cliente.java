@@ -74,7 +74,10 @@ public Cliente(String Nombre, Pedido Pedido, Pedido[] PedidoRealizados, String E
         this.Estado = Estado;
         this.Propuesta = Propuesta;
     }
+    
     public Boolean AceptacionPropuesta(Propuesta Propuesta){
     return this.Propuesta;
     }
+
+    
 }
