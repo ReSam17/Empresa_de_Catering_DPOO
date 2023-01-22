@@ -1,8 +1,10 @@
 
 package Modelo.Almacenamiento;
 
+import java.io.Serializable;
 
-public abstract class Ingrediente {
+
+public abstract class Ingrediente implements Serializable {
     //atributos
     protected String nombre;
     protected double precio;
