@@ -4,22 +4,24 @@ import java.util.ArrayList;
 
 public class Stock {
     //atributos  
-    private static int cantidadIngredientes=0;
+    private  int cantidadIngredientes;
     private ArrayList<IngredienteEmpresa> ingredienteStock;
     //constructores
     public Stock(){
         this.ingredienteStock=new ArrayList<IngredienteEmpresa>();
+        this.cantidadIngredientes = ingredienteStock.size();
     }
     public Stock(ArrayList<IngredienteEmpresa> ingrediente){
         this.ingredienteStock=ingrediente; 
+        this.cantidadIngredientes = ingrediente.size();
     }
     //get y set
-     public static int getCantidadIngredientes() {
-        return cantidadIngredientes;
+     public  int getCantidadIngredientes() {
+        return this.cantidadIngredientes;
     }
 
-    public static void setCantidadIngredientes(int cantidadIngredientes) {
-        Stock.cantidadIngredientes = cantidadIngredientes;
+    public void setCantidadIngredientes(int cantidadIngredientes) {
+        this.cantidadIngredientes = cantidadIngredientes;
     }
     
     public void setIngredienteStock(ArrayList<IngredienteEmpresa> ingrediente){
@@ -41,7 +43,7 @@ public class Stock {
             //se puede agregar
         }
     }
-    public static int encontrarElementoAgregar(IngredienteProveedor ingredienteAdicionar ,Stock stockActual){
+    public int encontrarElementoAgregar(IngredienteProveedor ingredienteAdicionar ,Stock stockActual){
         for (int i = 0; i < cantidadIngredientes; i++) {
             if(ingredienteAdicionar.getNombre().trim().equals(stockActual.getIngrediente().get(i).getNombre().trim())){
                 return i;
@@ -49,7 +51,7 @@ public class Stock {
         }
         return -1;
     }
-    public static int encontrarElementoEliminar(IngredienteEmpresa ingredienteEliminar ,Stock stockActual){
+    public int encontrarElementoEliminar(IngredienteEmpresa ingredienteEliminar ,Stock stockActual){
         for (int i = 0; i < cantidadIngredientes; i++) {
             if(ingredienteEliminar.getNombre().trim().equals(stockActual.getIngrediente().get(i).getNombre().trim())){
                 return i;

@@ -47,11 +47,11 @@ public class GestorRecursos implements Serializable{
         File file = new File(ruta);
         FileInputStream cargar = new FileInputStream(file);
         ObjectInputStream reader = new ObjectInputStream(cargar);
+        int x = reader.readInt();
+        this.stock.setCantidadIngredientes(x);
+        System.out.println(x);
 
-        this.stock.setCantidadIngredientes(reader.readInt());
-        int tam = this.stock.getCantidadIngredientes();
-
-        for (int i = 0; i < tam; i++) {
+        for (int i = 0; i < x; i++) {
             Object o = reader.readObject();
             this.stock.getIngrediente().add((IngredienteEmpresa) o);
         }

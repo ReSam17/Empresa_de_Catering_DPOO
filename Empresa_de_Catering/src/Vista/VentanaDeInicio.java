@@ -34,15 +34,15 @@ public class VentanaDeInicio extends javax.swing.JFrame {
             gr = new GestorRecursos();
             
             try {
-            gp.cargarClientes("Archivos\\Clientes.txt");
-            gp.cargarProveedores("Archivos\\Proveedores.txt");
-            gr.cargarStock("Archivos\\Stock.txt");
+                gr.cargarStock("Archivos\\Stock.txt");
+                gp.cargarProveedores("Archivos\\Proveedores.txt");
+                gp.cargarClientes("Archivos\\Clientes.txt"); 
             } catch (IOException ex) {
             Logger.getLogger(VentanaDeInicio.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(VentanaDeInicio.class.getName()).log(Level.SEVERE, null, ex);
         }
-            
+           
             ActualizarTabla();
             actualizarTablaP();
             setTitle("Administrador");
